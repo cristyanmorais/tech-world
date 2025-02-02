@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+.app-header {
+    width: 100%;
+    height: 100px;
+    background-color: #8d021f;
+    margin: 0;
+    display: flex;
+    top: 0;
+    z-index: 1000;
+  }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.nav-links {
+    display: flex;
+}
+  
+.nav-links a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 100px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f99eb3;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f99eb3;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    height: 70px;
+    margin-left: 50px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-svg {
+    height: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #8d021f;
+        z-index: 999;
+        transform: translateX(-200%);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #8d021f;
+        z-index: 100;
+        transform: translateX(0%);
+    }
+
+    .nav-links a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-bottom: 1px solid #fff;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .nav-links a:first-child {
+        border-top: 1px solid #fff;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .logo {
+        height: 50px;
+        margin-left: 20px;
+    }
+}

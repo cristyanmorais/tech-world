@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app-footer {
+    width: 100%;
+    height: 100px;
+    background-color: #8d021f;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer-content p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}

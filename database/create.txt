@@ -1,0 +1,35 @@
+CREATE DATABASE IF NOT EXISTS techworld;
+USE techworld;
+
+CREATE TABLE IF NOT EXISTS users (
+  id_user INT NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(20) NOT NULL,
+  last_name VARCHAR(20) NOT NULL,
+  username VARCHAR(20) NOT NULL UNIQUE,
+  password VARCHAR(100) NOT NULL,
+  address VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(10) NOT NULL,
+  PRIMARY KEY (id_user)
+);
+
+CREATE TABLE IF NOT EXISTS products (
+  id_product INT NOT NULL AUTO_INCREMENT,
+  product_name VARCHAR(50) NOT NULL,
+  brand VARCHAR(50) NOT NULL,
+  image_product VARCHAR(255) NOT NULL,
+  description_product VARCHAR(500) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL,
+  stock_quantity INT NOT NULL,
+  sold_quantity INT NOT NULL DEFAULT 0,
+  category VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id_product)
+);
+
+CREATE TABLE IF NOT EXISTS purchases (
+  id_purchase INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  total_amount DECIMAL(10, 2) NOT NULL,
+  payment_option VARCHAR(50) NOT NULL,
+  purchase_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id_user)
+);

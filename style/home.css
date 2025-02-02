@@ -1,0 +1,74 @@
+.home-body {
+    background-image: linear-gradient(#8d022046, #fff);
+}
+
+.banner {
+    width: 950px;
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+
+    background-image: linear-gradient(rgba(142, 2, 31, 0.7), rgba(142, 2, 31, 0.7)), url('../images/banner.jpeg');
+    background-size: cover;
+}
+
+.banner p{
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+.text-area p {
+    text-align: center;
+    color: #8d021f;
+    font-size: 2em;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.text-area a {
+    margin: auto;
+}
+
+.products-button {
+    
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #8d021f;
+    background-color: transparent;
+    border: 3px solid #8d021f;
+    border-radius: 30px;
+    padding: 7px 0;
+    width: 250px;
+    transition: 1s all ease;
+    cursor: pointer;
+}
+
+.products-button:hover {
+    color: #fff;
+    background-color: #8d021f;
+}
+
+@media screen and (max-width: 860px) {
+    .home-body {
+        background-position: 300px;
+    }
+
+    .banner {
+        margin-top: 70px;
+        width: 90%;
+    }
+
+    .banner p {
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,10 @@
+use techworld;
+
+INSERT INTO products (product_name, brand, image_product, description_product, price, stock_quantity, category)
+VALUES
+("Smartphone Galaxy S23", "Samsung", "./images/products/galaxy-s23.jpg", "O Samsung Galaxy S23 é um smartphone premium com câmera de alta resolução, tela AMOLED de 120Hz e processador Snapdragon 8 Gen 2.", 1200.00, 50, "Eletrônico"),
+("Notebook Inspiron 15", "Dell", "./images/products/inspiron-15.jpg", "Notebook Dell Inspiron 15 com processador Intel Core i7, 16GB de RAM, SSD de 512GB e tela Full HD de 15.6 polegadas.", 2500.00, 30, "Eletrônico"),
+("Fone de Ouvido WH-1000XM5", "Sony", "./images/products/wh-1000xm5.jpg", "Fone de ouvido sem fio Sony WH-1000XM5 com cancelamento de ruído ativo e bateria de até 30 horas de duração.", 350.00, 100, "Acessório"),
+("Placa de Vídeo RTX 4080", "NVIDIA", "./images/products/rtx-4080.jpg", "Placa de vídeo NVIDIA GeForce RTX 4080 com 16GB de memória GDDR6X, ideal para jogos e edição de vídeo.", 3000.00, 20, "Peça"),
+("Monitor UltraSharp 27", "Dell", "./images/products/ultrasharp-27.jpg", "Monitor Dell UltraSharp 27 polegadas com resolução 4K, cores precisas e design ergonômico.", 800.00, 40, "Eletrônico"),
+("Teclado Mecânico K95", "Corsair", "./images/products/k95.jpg", "Teclado mecânico Corsair K95 RGB Platinum com switches Cherry MX Speed e iluminação RGB personalizável.", 200.00, 60, "Acessório");

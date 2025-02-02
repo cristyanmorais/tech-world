@@ -1,0 +1,134 @@
+.checkout-content {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #8d021f;
+    font-size: 4em;
+}
+
+.checkout-content .card {
+    background-color: #8d021f;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: #fff;
+    height: 150px;
+}
+
+.checkout-content .image {
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.info-rows {
+    width: 100%;
+    display: flex;
+}
+
+.id-row {
+    width: 10%;
+}
+
+.name-row {
+    width: 30%;
+}
+
+.price-row {
+    width: 30%;
+}
+
+.quantity-row {
+    width: 25%;
+}
+
+.checkout-content input {
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.total-row {
+    text-align: center;
+    color: #8d021f;
+    margin-top: 50px;
+}
+
+.total-row p {
+    font-size: 4em;
+    margin-top: 0;
+}
+
+.checkout-content button{
+    font-size: 25px;
+    height: 50px;
+    padding: 0 30px 0 30px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    color: #fff;
+    background-color: #8d021f;
+    cursor: pointer;
+}
+
+.delete-row {
+    display: flex;
+    align-items: center;
+}
+
+.delete-row button {
+    margin: 0;
+}
+
+.empty-cart {
+    background-color: aqua;
+}
+
+.error h1 {
+    margin-top: 50px;
+    margin-bottom: 0;
+    color: #8d021f;
+    font-size: 4em;
+}
+
+@media screen and (max-width: 860px) {
+    .checkout-content {
+        width: 90%;
+    }
+
+    .checkout-content .card {
+        height: 450px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .checkout-content .image {
+        height: 200px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .info-rows {
+        flex-direction: column;
+    }
+
+    .id-row, .name-row, .price-row, .quantity-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

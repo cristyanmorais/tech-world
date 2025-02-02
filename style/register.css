@@ -1,0 +1,86 @@
+#container-register {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh);
+}
+
+.register-content {
+    background-color: #8d021f;
+    width: 80%;
+    height: 600px;
+    padding-bottom: 100px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50px;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.register-fields {
+    display: flex;
+    font-size: 2em;
+}
+
+.r-half, .l-half {
+    width: 50%;
+}
+
+.register-content h2 {
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.register-content a {
+    font-size: 25px;
+}
+
+.register-content label {
+    color: #c4e6fc;
+}
+
+.register-content input {
+    height: 50px;
+    margin: 0;
+    width: 400px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-name, .form-l-name, .form-c-password, .form-address, .form-phone, .form-username, .form-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-btn, .cancel-btn {
+    font-size: 25px;
+    height: 50px;
+    padding: 0 30px 0 30px;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: #8d021f;
+    background-color: #c4e6fc;
+    cursor: pointer;
+}
+
+.register-btn {
+    background-color: #528cd8;
+    color: #fff;
+}
+
+.cancel-btn {
+    background-color: #ea5a5a;
+    color: #fff;
+}
+
+.register-content a {
+    text-decoration: none;
+    color: #fff;
+}
